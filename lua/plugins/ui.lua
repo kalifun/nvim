@@ -1,5 +1,24 @@
 return {
   {
+    "akinsho/bufferline.nvim",
+    opts = {
+      options = {
+        max_name_length = 30,
+        max_prefix_length = 30,
+        show_buffer_close_icons = false,
+        show_close_icon = false,
+        diagnostics = true,
+        offsets = {
+          {
+            filetype = "neo-tree",
+            highlight = "Directory",
+            text_align = "left",
+          },
+        },
+      },
+    },
+  },
+  {
     "rcarriga/nvim-notify",
     opts = {
       stages = "fade_in_slide_out",
