@@ -1,5 +1,16 @@
 return {
   {
+    "rcarriga/nvim-notify",
+    opts = {
+      stages = "fade_in_slide_out",
+      timeout = 3000,
+      -- Mostly same as compact, but lines are wrapped based on max_width, some padding is added.
+      render = "wrapped-compact",
+      background_colour = "#000000",
+    },
+  },
+
+  {
     "EdenEast/nightfox.nvim",
     event = "VimEnter",
     config = function()
