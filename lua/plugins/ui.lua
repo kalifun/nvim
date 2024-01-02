@@ -1,5 +1,18 @@
 return {
   {
+    "EdenEast/nightfox.nvim",
+    event = "VimEnter",
+    config = function()
+      require("nightfox").setup({
+        options = {
+          transparent = true,
+        },
+      })
+      -- setup must be called before loading
+      vim.cmd("colorscheme nightfox")
+    end,
+  },
+  {
     "goolord/alpha-nvim",
     event = "VimEnter",
     opts = function()
