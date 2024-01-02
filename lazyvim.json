@@ -1,9 +1,9 @@
 {
-  "extras": [
-
-  ],
-  "news": {
-    "NEWS.md": "2123"
-  },
-  "version": 2
+    "extras": [
+        "plugins.extras.editor.git-blame"
+    ],
+    "news": {
+        "NEWS.md": "2123"
+    },
+    "version": 2
 }
