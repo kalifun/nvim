@@ -1,9 +1,11 @@
 {
-    "extras": [
-        "plugins.extras.editor.git-blame"
-    ],
-    "news": {
-        "NEWS.md": "2123"
-    },
-    "version": 2
+  "extras": [
+    "lazyvim.plugins.extras.formatting.black",
+    "lazyvim.plugins.extras.lang.python",
+    "plugins.extras.editor.git-blame"
+  ],
+  "news": {
+    "NEWS.md": "2123"
+  },
+  "version": 2
 }
