@@ -13,4 +13,25 @@ return {
       },
     },
   },
+  {
+    "nvim-pack/nvim-spectre",
+    build = false,
+    cmd = "Spectre",
+    opts = { open_cmd = "noswapfile vnew" },
+    keys = {
+      {
+        "<leader>sr",
+        function()
+          require("spectre").open()
+        end,
+        desc = "Replace in files (Spectre)",
+      },
+      {
+        "<leader>sf",
+        '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
+        desc = "Search on current file",
+        mode = { "n" },
+      },
+    },
+  },
 }
